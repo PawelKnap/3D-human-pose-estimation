@@ -15,8 +15,7 @@ USER GUIDE
 - Requirements
     - CUDA (Nvidia GPU) version:
         - NVIDIA graphics card with at least 8 GB available.
-        - At least 3 GB of free RAM memory (assuming cuDNN installed).
-        - Highly recommended: cuDNN.
+        - At least 3 GB of free RAM memory
     - Highly recommended: a CPU with at least 8 cores.
 
 - Advanced tip: You might need more resources with greater `--net_resolution` and/or `scale_number` or less resources by reducing them.
@@ -55,7 +54,7 @@ USER GUIDE
 ```
 sudo pip install numpy opencv-python
 ```
-- **IMPOTANT**: make sure Python 3.6.8 is the only Python version installed in the machine.
+- **IMPOTANT**: make sure Python 3.6.8 is the Python version of machine as well as anaconda environment.
 
 6. Radars:
     - Download and install the Texas Instruments [MMWAVE-SDK](https://www.ti.com/tool/MMWAVE-SDK), which includes the XDS110 drivers necessary. 
@@ -65,11 +64,7 @@ sudo pip install numpy opencv-python
 ## Installation
 
 ### Clone this project
-The first step is to clone this project.
-1. You might use [GitHub Desktop](https://desktop.github.com/) or clone it from Powershell:
-```bash
-git clone https://git.soton.ac.uk/at2n19/gdp.git
-cd gdp/
+Download project.zip file and unzip it.
 ```
 
 ### People counting algorithm flashing
