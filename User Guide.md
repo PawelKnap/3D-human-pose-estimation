@@ -64,11 +64,11 @@ sudo pip install numpy opencv-python
 ## Installation
 
 ### Clone this project
-Download project.zip file and unzip it.
-```
+Download project.zip (https://drive.google.com/file/d/1FoBL7xqy_fOLh75SyXiKalLmpkGleEdI/view?usp=drive_link) and unzip it.
 
 ### People counting algorithm flashing
-1. Unzip the `lab0011-pplcount` folder
+If the radars are not programmed:
+1. Download and unzip the `lab0011-pplcount` folder
 2. Open the Uniflash application
 3. Set the jumpers on the board to position ‘101’. 
 4. Press the SW2 switch (nRST) to power cycle the board. 
@@ -76,19 +76,6 @@ Download project.zip file and unzip it.
 6. Once you are told that the board is flashed in the Uniflash application, unplug the power from the board
 7. Set the jumpers in functional mode – ‘001’
 8. Power up the board again, and then power cycle (using nRST). 
-
-These instructions and board diagrams for the radar of choice are available on the TI website.
-
-### Unzip OpenPose
-The second step is to unzip the `openpose` folder inside the `gdp` folder.
-Otherwise, clone it using the following instructions:
-
-1. You might use [GitHub Desktop](https://desktop.github.com/) or clone it from Powershell:
-```bash
-git clone https://github.com/CMU-Perceptual-Computing-Lab/openpose
-cd openpose/
-git submodule update --init --recursive --remote
-```
 
 ### CMake Configuration
 1. Go to the `openpose` folder and open CMake-GUI from it. On Windows, double click on the CMake-gui application or use the Powershell:
