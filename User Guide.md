@@ -91,8 +91,8 @@ If the radars are not programmed:
 5. Enable the `BUILD_PYTHON` flag and click `Configure` again.
 6. If this step is successful, the `Configuring done` text will appear in the bottom box in the last line. Otherwise, some red text will appear in that same bottom box.
 <p align="center">
-    <img src="Installation/cmake_im_3.png" width="480">
-    <img src="Installation/cmake_im_3_windows.png" width="480">
+    <img src="Pictures from User Guide/cmake_im_3.png" width="480">
+    <img src="Pictures from User Guide/cmake_im_3_windows.png" width="480">
 </p>
 
 7. Press the `Generate` button and proceed to [Compilation](#compilation). You can now close CMake.
