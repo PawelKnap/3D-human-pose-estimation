@@ -83,9 +83,9 @@ If the radars are not programmed:
 3. In the "Where to build binaries:" tab enter the same path as above but with "\build" at the end. If `build` does not exist, it will ask you whether to create it. Press `Yes`.
 4. Press the `Configure` button, set the generator to Visual Studio 19 Enterprise, and press `Finish`. Note: CMake-GUI has changed their design after version 14. For versions older than 14, you usually select `Visual Studio XX 20XX Win64` as the generator (`X` depends on your VS version), while the `Optional toolset to use` must be empty. However, new CMake versions require you to select only the VS version as the generator, e.g., `Visual Studio 16 2019`, and then you must manually choose `x64` for the `Optional platform for generator`. See the following images as example.
 <p align="center">
-    <img src="Installation/cmake_im_2.png" width="240">
-    <img src="Installation/cmake_im_2_windows.png" width="240">
-    <img src="Installation/cmake_im_2_windows_new.png" width="240">
+    <img src="Pictures from User Guide/cmake_im_2.png" width="240">
+    <img src="Pictures from User Guide/cmake_im_2_windows.png" width="240">
+    <img src="Pictures from User Guide/cmake_im_2_windows_new.png" width="240">
 </p>
 
 5. Enable the `BUILD_PYTHON` flag and click `Configure` again.
