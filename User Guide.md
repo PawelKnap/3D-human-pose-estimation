@@ -81,6 +81,9 @@ If the radars are not programmed:
 1. Go to >> DMake >> bin and open cmake-gui.exe
 2. In the "Where is the source code:" tab enter a path to the dowloaded and unzipped project.zip folder
 3. In the "Where to build binaries:" tab enter the same path as above but with "\build" at the end. If `build` does not exist, it will ask you whether to create it. Press `Yes`.
+<p align="center">
+    <img src="Pictures from User Guide/cmake_im_1.png" width="480">
+</p>
 4. Press the `Configure` button, set the generator to Visual Studio 19 Enterprise, and press `Finish`. Note: CMake-GUI has changed their design after version 14. For versions older than 14, you usually select `Visual Studio XX 20XX Win64` as the generator (`X` depends on your VS version), while the `Optional toolset to use` must be empty. However, new CMake versions require you to select only the VS version as the generator, e.g., `Visual Studio 16 2019`, and then you must manually choose `x64` for the `Optional platform for generator`. See the following images as example.
 <p align="center">
     <img src="Pictures from User Guide/cmake_im_2.png" width="240">
