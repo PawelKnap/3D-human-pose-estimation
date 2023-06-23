@@ -78,28 +78,18 @@ If the radars are not programmed:
 8. Power up the board again, and then power cycle (using nRST). 
 
 ### CMake Configuration
-1. Go to the `openpose` folder and open CMake-GUI from it. On Windows, double click on the CMake-gui application or use the Powershell:
-```
-cd {OpenPose_folder}
-mkdir build/
-cd build/
-cmake-gui ..
-```
-2. Select the OpenPose directory as project source directory, and a non-existing or empty sub-directory (e.g., `build`) where the Visual Studio solution (Windows) will be generated. If `build` does not exist, it will ask you whether to create it. Press `Yes`.
-<p align="center">
-    <img src="Installation/cmake_im_1.png" width="480">
-</p>
-
-3. Press the `Configure` button, set the generator to Visual Studio 19 Enterprise, and press `Finish`. Note: CMake-GUI has changed their design after version 14. For versions older than 14, you usually select `Visual Studio XX 20XX Win64` as the generator (`X` depends on your VS version), while the `Optional toolset to use` must be empty. However, new CMake versions require you to select only the VS version as the generator, e.g., `Visual Studio 16 2019`, and then you must manually choose `x64` for the `Optional platform for generator`. See the following images as example.
+1. Go to >> DMake >> bin and open cmake-gui.exe
+2. In the "Where is the source code:" tab enter a path to the dowloaded and unzipped project.zip folder
+3. In the "Where to build binaries:" tab enter the same path as above but with "\build" at the end. If `build` does not exist, it will ask you whether to create it. Press `Yes`.
+4. Press the `Configure` button, set the generator to Visual Studio 19 Enterprise, and press `Finish`. Note: CMake-GUI has changed their design after version 14. For versions older than 14, you usually select `Visual Studio XX 20XX Win64` as the generator (`X` depends on your VS version), while the `Optional toolset to use` must be empty. However, new CMake versions require you to select only the VS version as the generator, e.g., `Visual Studio 16 2019`, and then you must manually choose `x64` for the `Optional platform for generator`. See the following images as example.
 <p align="center">
     <img src="Installation/cmake_im_2.png" width="240">
     <img src="Installation/cmake_im_2_windows.png" width="240">
     <img src="Installation/cmake_im_2_windows_new.png" width="240">
 </p>
 
-4. Enable the `BUILD_PYTHON` flag and click `Configure` again.
-
-5. If this step is successful, the `Configuring done` text will appear in the bottom box in the last line. Otherwise, some red text will appear in that same bottom box.
+5. Enable the `BUILD_PYTHON` flag and click `Configure` again.
+6. If this step is successful, the `Configuring done` text will appear in the bottom box in the last line. Otherwise, some red text will appear in that same bottom box.
 <p align="center">
     <img src="Installation/cmake_im_3.png" width="480">
     <img src="Installation/cmake_im_3_windows.png" width="480">
@@ -118,25 +108,14 @@ cmake-gui ..
 **VERY IMPORTANT NOTE**: In order to use the project outside Visual Studio, and assuming you have not unchecked the `BUILD_BIN_FOLDER` flag in CMake, copy all DLLs from `{build_directory}/bin` into the folder where the generated `openpose.dll` and `*.exe` demos are, e.g., `{build_directory}x64/Release`.
 
 ### CONDA environments
-Go into the `gdp` folder and create two conda environments:
+Go into the "project" folder and create two conda environments:
 ```
 conda env create -f 3dpose.yml
 conda env create -f visualiser.yml
 ```
 
-### Copy and paste files
-1. Copy and paste the `gdp/gui.py` file into `gdp/openpose/build/examples/tutorial_api_python`
-
-2. Copy and paste the content of the `gdp/main.py` file into `gdp/openpose/build/examples/tutorial_api_python/04_keypoints_from_images.py`
-    - **IMPORTANT**: Copying and pasting the `gdp/main.py` file into `gdp/openpose/build/examples/tutorial_api_python/04_keypoints_from_images.py` would not work. The content of the `gdp/openpose/build/examples/tutorial_api_python/04_keypoints_from_images.py` file needs to be deleted before pasting the content of the `gdp/main.py` file. Do not rename or move the `gdp/openpose/build/examples/tutorial_api_python/04_keypoints_from_images.py` file.
-
-3. Copy and paste the `gdp/fully_trained_model.hdf5` file into `gdp/openpose/build/examples/tutorial_api_python`
-4. Copy and paste the `gdp/part_trained_model.hdf5` file into `gdp/openpose/build/examples/tutorial_api_python`
-5. Copy and paste the `gdp/ScreenCamera_2022-11-25-12-27-51.json` file into `gdp/openpose/build/examples/tutorial_api_python`.
-
-
 ## Run
-Go into the `gdp` folder and run the programme:
+Go into the "project" folder and run the programme:
 ```
 conda activate 3dpose
 python openpose/build/examples/tutorial_api_python/04_keypoints_from_images.py --camera_height {arg} --net_resolution {arg} --command_port1 {arg} --command_port2 {arg} --command_port3 {arg} --data_port1 {arg} -- data_port2 {arg} --data_port3 {arg}
