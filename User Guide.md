@@ -118,10 +118,12 @@ conda env create -f visualiser.yml
 ```
 
 ## Run
-Go into the "project" folder and run the programme:
+1. Change camera number in python programms (*_poseestimation_***.py) according to the cameras order in device manager
+2. Change paths in main() of that programms according to the locations of the visualiser environment on your machine
+3. Go into the "project" folder and run the programme:
 ```
 conda activate 3dpose
-python openpose/build/examples/tutorial_api_python/04_keypoints_from_images.py --camera_height {arg} --net_resolution {arg} --command_port1 {arg} --command_port2 {arg} --command_port3 {arg} --data_port1 {arg} -- data_port2 {arg} --data_port3 {arg}
+python 04_keypoints_from_images.py --camera_height {arg} --net_resolution {arg} --command_port1 {arg} --command_port2 {arg} --command_port3 {arg} --data_port1 {arg} -- data_port2 {arg} --data_port3 {arg}
 ```
 The `{arg}`s need to be replaced with the appropriate arguments:
 - `--camera_height` is the elevation of the camera sensor from the floor measured in meter units. The argument must be a double. Example: `1.50`
