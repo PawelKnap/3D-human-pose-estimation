@@ -118,20 +118,10 @@ conda env create -f visualiser.yml
 ```
 
 ## Run
-1. Change camera number in python programms (*_poseestimation_***.py) according to the cameras order in device manager
-2. Change paths in main() of that programms according to the locations of the visualiser environment on your machine
+1. Change camera number in python programm according to the cameras order in device manager
+2. Change paths in main() of that programm according to the locations of the visualiser environment on your machine
 3. Go into the "project" folder and run the programme:
 ```
 conda activate 3dpose
-python 04_keypoints_from_images.py --camera_height {arg} --net_resolution {arg} --command_port1 {arg} --command_port2 {arg} --command_port3 {arg} --data_port1 {arg} -- data_port2 {arg} --data_port3 {arg}
+python poseestimation.py
 ```
-The `{arg}`s need to be replaced with the appropriate arguments:
-- `--camera_height` is the elevation of the camera sensor from the floor measured in meter units. The argument must be a double. Example: `1.50`
-- `--net_resolution` is the resolution of the image processed by OpenPose. Suggested value: `640x320`
-- `--command_port1` is the command port used by radar #1. The latter is referred as reference radar in our report. Example: `'COM1'`
-- `--data_port1` is the data port used by radar #1. The latter is referred as reference radar in our report. Example: `'COM2'`
-- `--command_port2` is the command port used by radar #2. The latter is next to radar # 1 in a clockwise fashion. Example: `'COM3'`
-- `--data_port2` is the data port used by radar #2. The latter is next to radar # 1 in a clockwise fashion. Example: `'COM4'`
-- `--command_port3` is the command port used by radar #3. The latter is next to radar # 2 in a clockwise fashion. Example: `'COM5'`
-- `--data_port3` is the data port used by radar #3. The latter is next to radar # 2 in a clockwise fashion. Example: `'COM6'`
-- Additional command line arguments can be provided for OpenPose as illustrated [here](https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/include/openpose/flags.hpp) 
