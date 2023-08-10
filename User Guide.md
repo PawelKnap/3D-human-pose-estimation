@@ -64,7 +64,7 @@ sudo pip install numpy opencv-python
 ## Installation
 
 ### Clone this project
-Download project.zip (https://drive.google.com/file/d/1FoBL7xqy_fOLh75SyXiKalLmpkGleEdI/view?usp=drive_link) and unzip it.
+Download project.zip (https://drive.google.com/file/d/1prmICIxBDwJRRYW0OYJWWYGn2T6Ayo0d/view?usp=sharing) and unzip it.
 
 ### People counting algorithm flashing
 If the radars are not programmed:
