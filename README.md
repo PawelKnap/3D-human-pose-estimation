@@ -1,8 +1,8 @@
-# Real-time 3D multi-person human pose estimation using an omnidirectional camera and three mm-Wave radars
+# Real-time ominidirectional 3D multi-person human pose estimation with occlusion handling
 Created by Pawel Knap based on previous project of Alberto Tamajo, Aarti Amin, Emil Stoev, Isaac Klugman and Timothy Fish (https://git.soton.ac.uk/at2n19/gdp).
 
 # Installation
 To install and run the application, refer to the instructions provided in the User Guide.md file.
 
 # Introduction
-The Korean Institue of Science & Technology’s (KIST) Center for Artificial Intelligence set us the ambitious goal of developing a pioneering prototype real-time multi-person 3D human pose estimation algorithm using an omni-directional 360° camera and three mmWave radars. This algorithm is to be integrated into a humanoid robot deployed in an indoor café based in KIST. Despite the inherent difficulty of this project, due to its novelty, we successfully propose the first algorithm that leverages the aforementioned peripherals to estimate the 3D pose of the people in the scene. Additionally, we also deliver a data visualisation tool to display the 3D pose of the people in a human-readable format. The code of our project is included in this repository. This repository also includes an user manual to aid in the installation process of this project.
+The Center for Artificial Intelligence at the Korean Institute of Science & Technology (KIST) presented us with an ambitious task: to pioneer a prototype for a real-time multi-person 3D human pose estimation algorithm. This algorithm would utilize a 360° omni-directional camera and three mmWave radars, intended to be integrated into a humanoid robot operating in an indoor café at KIST. Despite the project's inherent complexity due to its novelty, we successfully introduced the algorithm that effectively estimates the 3D pose of individuals within the scene. The project's code and installation instructions are both included in this repository for reference.
