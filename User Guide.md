@@ -117,11 +117,16 @@ conda env create -f 3dpose.yml
 conda env create -f visualiser.yml
 ```
 
+The project folder can be found in 
+
 ## Run
-1. Change camera number in python programm according to the cameras order in device manager
-2. Change paths in main() of that programm according to the locations of the visualiser environment on your machine
-3. Go into the "project" folder and run the programme:
+1. Change the camera number in the Python program according to the order of the cameras in the device manager
+2. Change paths in the main() of that program according to the locations of the visualiser environment on your machine
+3. Go into the "project" folder and run the program:
 ```
 conda activate 3dpose
 python poseestimation.py
 ```
+The "project" folder is -> openpose -> build -> examples -> tutorial_api_python
+## Update
+For the updated version of the program with 4 radars instead of 3 and improved pose estimation use the pose_estimation_v2.py instead of pose_estimation.py. To do that, the updated code has to be moved to the "project" folder.
