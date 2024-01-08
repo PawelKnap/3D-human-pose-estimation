@@ -21,8 +21,8 @@ USER GUIDE
 - Advanced tip: You might need more resources with greater `--net_resolution` and/or `scale_number` or less resources by reducing them.
 
 - Radar hardware
-    - 3 Texas Instrument (TI) AWR1843BOOST radar boards.
-
+    - 3  (4 in updated version) Texas Instrument (TI) AWR1843BOOST radar boards.
+  
 ## Prerequisites
 1. Install **CMake GUI**: Download and install the `Latest Release` of CMake `Windows win64-x64 Installer` from the [CMake download website](https://cmake.org/download/), called `cmake-X.X.X-win64-x64.msi`.
 
@@ -60,6 +60,7 @@ sudo pip install numpy opencv-python
     - Download and install the Texas Instruments [MMWAVE-SDK](https://www.ti.com/tool/MMWAVE-SDK), which includes the XDS110 drivers necessary. 
     - Dowload and install the TI tool called [Uniflash](https://www.ti.com/tool/UNIFLASH). It flashes the .bin file to the board. 
     - The board needs a power supply - recommended 5V dc output, 3A output, and a USB connection the PC (this cable should come with the radar)
+    - Front of the Radar 1 should be aligned with the front of the camera, and the subsequent radars should be positioned in a counterclockwise direction. In the case of a 3-radar system, each radar is spaced at an angular distance of 120 degrees from the previous one. For the updated 4-radar system, the angular separation is adjusted to 90 degrees between each radar.
 
 ## Installation
 
@@ -121,7 +122,7 @@ The project folder can be found in
 
 ## Run
 1. Change the camera number in the Python program according to the order of the cameras in the device manager
-2. Change paths in the main() of that program according to the locations of the visualiser environment on your machine
+2. Change paths in the main() of pose_estimation.py program according to the locations of the visualiser environment on your machine
 3. Go into the "project" folder and run the program:
 ```
 conda activate 3dpose
@@ -129,4 +130,4 @@ python poseestimation.py
 ```
 The "project" folder is -> openpose -> build -> examples -> tutorial_api_python
 ## Update
-For the updated version of the program with 4 radars instead of 3 and improved pose estimation use the pose_estimation_v2.py instead of pose_estimation.py. To do that, the updated code has to be moved to the "project" folder.
+For the updated version of the program with 4 radars instead of 3 and improved pose estimation use the pose_estimation_v2.py instead of pose_estimation.py. To do that, the pose_estimation_v2.py has to be moved to the "project" folder.
