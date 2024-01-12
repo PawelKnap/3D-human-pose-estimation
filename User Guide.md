@@ -131,3 +131,5 @@ python poseestimation.py
 The "project" folder is -> openpose -> build -> examples -> tutorial_api_python
 ## Update
 For the updated version of the program with 4 radars instead of 3 and improved pose estimation use the pose_estimation_v2.py instead of pose_estimation.py. To do that, the pose_estimation_v2.py has to be moved to the "project" folder.
+
+The pose_estimation_v3.py version includes code enhancements that increase the plausibility of poses in both 2D and 3D for equirectangular images from omnidirectional cameras. However, it comes with a trade-off as it may slow down the system, particularly when dealing with more than three people.
