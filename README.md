@@ -1,7 +1,7 @@
 # Real-time omnidirectional 3D multi-person human pose estimation with occlusion handling
 Created by Pawel Knap based on previous project of Alberto Tamajo, Aarti Amin, Emil Stoev, Isaac Klugman and Timothy Fish (https://git.soton.ac.uk/at2n19/gdp).
 
-The updated version was created by Pawel Knap, Akira Lane, Georgy Markov, Joel Vong Wei Sheng, and Anthi Terezaki.
+The updated versions (v2, and v3) were created by Pawel Knap, Akira Lane, Georgy Markov, Joel Vong Wei Sheng, and Anthi Terezaki.
 
 # Installation
 To install and run the application, please follow the instructions in the User Guide.md file.
